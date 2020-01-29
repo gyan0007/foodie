@@ -10,7 +10,7 @@ gem 'will_paginate'
 gem 'bootstrap-will_paginate'
 gem 'bootstrap-sass'
 gem 'grape'
-gem 'rack-cors', '~> 0.2.9', require: 'rack/cors'
+gem 'rack-cors', '~> 1.0.5', require: 'rack/cors'
 gem 'grape-active_model_serializers'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
