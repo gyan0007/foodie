@@ -9,6 +9,7 @@ class UsersController < ApplicationController
 
   def show
     @user = User.find(params[:id])
+    @rating_n_reviews = @user.rating_n_reviews.paginate(page: params[:page])
   end
 
   def new

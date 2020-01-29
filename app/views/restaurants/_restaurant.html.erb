@@ -1,0 +1,8 @@
+<li>
+  <%= image_for restaurant, size: 50 %>
+  <%= link_to restaurant.name, restaurant %>
+  <% if logged_in? && current_user.admin?%>
+    | <%= link_to "delete", restaurant, method: :delete, data: { confirm: "You sure?" } %>
+  <% end %>
+  <br><br><br><br>
+</li>

@@ -1,0 +1,9 @@
+<li id="rating_n_reviews-<%= rating_n_review.id %>">
+  <span class="user"><%= link_to rating_n_review.user.name, rating_n_review.user %></span>
+  <span class="restaurant"><%= link_to rating_n_review.restaurant.name, rating_n_review.restaurant %></span>
+  <span class="rating"><%= rating_n_review.rating %></span>
+  <span class="review"><%= rating_n_review.review %></span>
+  <span class="timestamp">
+    Posted <%= time_ago_in_words(rating_n_review.created_at) %> ago.
+  </span>
+</li>

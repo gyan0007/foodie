@@ -1,0 +1,2 @@
+class RatingNReviewsController < ApplicationController
+end

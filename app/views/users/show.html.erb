@@ -8,4 +8,13 @@
       </h1>
     </section>
   </aside>
+  <div class="col-md-8">
+    <% if @user.rating_n_reviews.any? %>
+      <h3>Rating And Reviews (<%= @user.rating_n_reviews.count %>)</h3>
+      <ol class="rating_n_reviews">
+        <%= render @rating_n_reviews %>
+      </ol>
+      <%= will_paginate @rating_n_reviews %>
+    <% end %>
+  </div>
 </div>
